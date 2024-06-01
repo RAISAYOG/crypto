@@ -4,42 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CryptoCurrency</title>
-    <link rel="stylesheet" href="css/Cryptostyle.css">
+    <link rel="stylesheet" href="css/check.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">CryptoCurrency</div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" id="home1">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#features">Features</a></li>
+                <li><a href="#graph">Graph</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <div id="Profile">
+                <li class="profile">
+                    <a href="#profile">Profile</a>
+                    <ul class="dropdown">
+                        
+                            <li><a href="#profile">View Profile</a></li>
+                            <li><a href="#logout">Logout</a></li>
+                        </div>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
-    <!-- TradingView Widget BEGIN -->
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
     
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-    {
-    "width": "100%",
-    "height": "500",
-    "symbol": "NASDAQ:AAPL",
-    "interval": "240",
-    "timezone": "Etc/UTC",
-    "theme": "dark",
-    "style": "1",
-    "locale": "en",
-    "allow_symbol_change": true,
-    "calendar": false,
-    "support_host": "https://www.tradingview.com"
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
     <section id="home" class="home-section">
         <div class="home-content">
             <h1>Welcome to CryptoCurrency</h1>
@@ -64,6 +54,31 @@
         <div class="feature">
             <h3>Accessibility</h3>
             <p>Easy access to your funds anytime, anywhere.</p>
+        </div>
+    </section>
+    <section id="graph" class="graph-section">
+        <h2>Market Trends</h2>
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+                "width": "100%",
+                "height": "500",
+                "symbol": "NASDAQ:AAPL",
+                "interval": "240",
+                "timezone": "Etc/UTC",
+                "theme": "dark",
+                "style": "1",
+                "locale": "en",
+                "allow_symbol_change": true,
+                "calendar": false,
+                "support_host": "https://www.tradingview.com"
+            }
+            </script>
+        </div>
+        <div class="buttons">
+            <button class="buy-btn">Buy</button>
+            <button class="sell-btn">Sell</button>
         </div>
     </section>
     <section id="contact" class="contact-section">
